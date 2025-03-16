@@ -1,15 +1,11 @@
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
+import { Khand, Open_Sans, Poppins, Inter } from "next/font/google";
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+const khand = Khand({ subsets: ["latin"], weight: ["400", "500", "700"] });
+const openSans = Open_Sans({ subsets: ["latin"], weight: ["400", "600"] });
+const poppins = Poppins({ subsets: ["latin"], weight: ["600", "700"] });
+const inter = Inter({ subsets: ["latin"], weight: ["400", "500"] });
 
 export const metadata = {
   title: "Create Next App",
@@ -19,8 +15,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <title>Car Polish - Home</title>
+      </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${openSans.className} ${khand.className} ${inter.className} ${poppins.variable} bg-main-default`}
       >
         {children}
       </body>
