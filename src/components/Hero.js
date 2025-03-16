@@ -1,7 +1,7 @@
 import { IoStar } from "react-icons/io5";
 import PrimaryButton from "@/components/button/Primary";
 import SecondaryButton from "@/components/button/Secondary";
-import Title from "@/components/animations/title";
+import Title from "@/components/animations/Title";
 import { FaArrowAltCircleRight } from "react-icons/fa";
 import { AiFillMessage } from "react-icons/ai";
 
